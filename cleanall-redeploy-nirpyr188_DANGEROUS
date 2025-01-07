@@ -1,0 +1,8 @@
+#!/bin/bash
+
+rm -rf ./ao3k-nirpyr188-conf
+rm -rf ./nir188-rootdir
+rm -rf ./.nir188.cacaotaskmanager-log
+
+
+cacao-loop-deploy ao3k-nirpyr188

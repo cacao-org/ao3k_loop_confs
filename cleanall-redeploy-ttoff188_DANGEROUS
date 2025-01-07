@@ -1,0 +1,8 @@
+#!/bin/bash
+
+rm -rf ./ao3k-ttoff188-conf
+rm -rf ./ttoff188-rootdir
+rm -rf ./.ttoff188.cacaotaskmanager-log
+
+
+cacao-loop-deploy ao3k-ttoff188

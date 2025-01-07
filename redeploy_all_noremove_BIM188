@@ -1,0 +1,13 @@
+#!/bin/bash
+
+(cd ${HOME}/AOloop;
+rm -rf .apd188.cacaotaskmanager-log/;   # Loop 1
+rm -rf .lowfs188.cacaotaskmanager-log/; # Loop 2
+rm -rf .nir188.cacaotaskmanager-log/;   # Loop 3
+rm -rf .ttoff188.cacaotaskmanager-log/; # Loop 4
+
+cacao-loop-deploy -r ao3k-nirpyr188; # Loop 3 but also spins up DM00 / DM10
+cacao-loop-deploy -r ao3k-ttoff188;  # Loop 4 and spins up DM01 / DM11
+cacao-loop-deploy -r ao3k-apd188;    # Loop 1
+cacao-loop-deploy -r ao3k-lowfs188;  # Loop 2
+)

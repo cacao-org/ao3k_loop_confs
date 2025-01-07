@@ -1,0 +1,10 @@
+#!/bin/bash
+
+rm -rf nlcwfs188-rootdir
+rm -rf .nlcwfs188.cacaotaskmanager-log
+rm -rf /milk/shm/aol5*
+rm -rf /milk/shm/nlcwfs188*
+tmux kill-session -t nlcwfs188_fpsCTRL
+
+
+cacao-loop-deploy -r ao3k-nlcwfs188
